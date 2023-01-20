@@ -277,19 +277,45 @@
     }
   
   </style>
-  
+
+
+
   <script setup>
+
     import Tabs from '/components/Tabs.vue'
     import Tab from '/components/Tab.vue'
+    import jsonData1 from '~/static/json/profile-1.json'
+    import jsonData2 from '~/static/json/profile-2.json'
+    
+    
+    const { id } = useRoute().params
 
-    import jsonData from '~/static/json/profile-1.json'
+    const profile = ref(jsonData1)
+
+    // const { id } = useRoute().params
+
     
 
-    const {
-      id
-    } = useRoute().params
+
+    
 
 
+/*
+    const load = async () => {
+    try {
+        const profile = jsonData // <-- Replace this line
+        if (!data.ok) {
+            throw Error('Throw error. No data available.')
+        }
+        profile.value = await data.json()
+    } catch (err) {
+        error.value = err.message
+    }
+}
+*/
+
+
+/*
 const profile = ref([])
     const error = ref(null)
   
@@ -307,7 +333,7 @@ const profile = ref([])
         }
     }
     load()
-
+*/
 
 
 /*
@@ -328,7 +354,7 @@ const profile = ref([])
         }
     }
     load()
-    */
+  */
 
     
 
