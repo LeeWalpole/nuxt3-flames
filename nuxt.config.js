@@ -29,8 +29,9 @@ export default defineNuxtConfig(
 
     {
         server: {
-            headers: {
-                'Access-Control-Allow-Origin': 'https://heroic-conkies-a5985e.netlify.app'
+            headers: (req, res, next) => {
+                res.setHeader('Access-Control-Allow-Origin', req.headers.origin)
+                next()
             }
         }
     }
