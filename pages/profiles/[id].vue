@@ -284,19 +284,53 @@
 
     import Tabs from '/components/Tabs.vue'
     import Tab from '/components/Tab.vue'
-    import jsonData1 from '~/static/json/profile-1.json'
-    import jsonData2 from '~/static/json/profile-2.json'
+    // import jsonData1 from '~/static/json/profile-1.json'
+    // import jsonData2 from '~/static/json/profile-2.json'
     
-    
-    const { id } = useRoute().params
-
-    const profile = ref(jsonData1)
+      // const profile = ref(jsonData1)
 
     // const { id } = useRoute().params
 
-    
+    const { id } = useRoute().params
 
+    const profile = ref([])
+    const error = ref(null)
+  
+    const load = async () => {
+        try {
+            // let data = await fetch('https://www.flames.agency/api/' +id+'.json')
+            // https://www.flames.agency/api/profile-1.json
+            let data = await fetch('https://heroic-conkies-a5985e.netlify.app/public/json/'+id+'.json')
+            if (!data.ok) {
+                throw Error('Throw error. No data available.')
+            }
+            profile.value = await data.json()
+        } catch (err) {
+            error.value = err.message
+        }
+    }
+    load()
 
+/*    
+    const load = async () => {
+        try {
+            // const jsonData = require(`~/static/json/${id}.json`)
+            const jsonData = require(`~/static/json/profile-1.json`)
+            // let data = await fetch('http://localhost:10009/wp-json/data/v1/profiles/'+id)
+            if (!data.ok) {
+                throw Error('Throw error. No data available.')
+            }
+            profile.value = jsonData
+        } catch (err) {
+            error.value = err.message
+        }
+    }
+    load()
+*/
+
+      // let data = await fetch('https://www.flames.agency/api/' +id+'.json')
+            // https://www.flames.agency/api/profile-1.json
+            // let data = await fetch('../../../static/json/'+id+'.json/')
     
 
 
