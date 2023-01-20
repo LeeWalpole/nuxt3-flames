@@ -49,6 +49,8 @@
     data: profiles
   } = await useFetch('http://localhost:10009/wp-json/data/v1/profiles/')
 
+
+  
   
 </script>
 

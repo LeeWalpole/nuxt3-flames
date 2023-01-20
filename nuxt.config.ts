@@ -3,5 +3,7 @@
 export default defineNuxtConfig({
     css: [
     'assets/css/all.css'
-    ]
-})
+    ],
+}
+)
+

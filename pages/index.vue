@@ -1,11 +1,15 @@
 <template>
+  <div>
     <!-- Homepage Feed Below -->
     <HeaderMain headerTitle="Favorites" />
-    <Feed />
+    <Feed /><!-- /components/Feed - Fetches data from a local API (http://localhost:10009/wp-json/data/v1/profiles/) -->
+    <!-- To do: Save the JSON somewhere I can access in Nuxt -->
     <NavBottom />
+  </div>
 </template>
 
-  
+
+
 <style scoped>
 #app {
   height: 100%

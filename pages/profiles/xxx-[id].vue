@@ -281,7 +281,7 @@
       id
     } = useRoute().params
   
-    const uri = 'http://192.168.1.101:10009/wp-json/data/v1/profile/' + id
+    const uri = 'http://localhost:10009/wp-json/data/v1/profiles/' + id
   
     // Fetch poduct
     const {
