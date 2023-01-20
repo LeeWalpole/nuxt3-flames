@@ -292,6 +292,8 @@
   
     const load = async () => {
         try {
+            // let data = await fetch('https://www.flames.agency/api/' +id+'.json')
+            // https://www.flames.agency/api/profile-1.json
             let data = await fetch('http://localhost:10009/wp-json/data/v1/profiles/'+id)
             if (!data.ok) {
                 throw Error('Throw error. No data available.')
