@@ -1,0 +1,125 @@
+@import url("reset.css");
+@import url("popup.css");
+@import url("feed.css");
+@import url("main.css");
+
+
+:root { 
+    --h1: 2rem;
+    --h2: 1.6rem;
+    --h3: 1.6rem;
+    --h4: 1.6rem;
+    --h5: 1.8rem;
+    --h6: 1.6rem;
+    --p: 1rem;
+    --lead: 1rem;
+    --subheadline: 1rem;
+    --small: calc(var(--p) - 10%);
+    --xsmall: calc(var(--p) - 20%);
+    --line-height: 1.6;
+    --line-height-headings: 1.2;
+    --headline: 1.6rem;
+    --headline-line: 1.2;
+    --kicker: var(--small);
+}
+
+:root { 
+    --primary:white;
+    --secondary:white;
+}
+
+:root { 
+    --black1: #0a0006;
+    --black2: #2d2735;
+    --black3: #3e3e3e;
+    --white1: #fff;
+    --white2: #fff6fc;
+    --white3: #ffe2f5;
+    --color: #ff6ccc;
+    --color1: #ff6ccc;
+    --color1a: #dc1fac;
+    --color2: #0A84FF!important;
+    --grey: #555;
+    --lightgrey: #baa6b1!important;
+    --gradient1: "#9F6CFF";
+    --gradient2: "#FF0AAA";
+    --gradient3: "#FF6CCC";
+    --color-light: #dadbdc;
+    --color-lightgrey: #babbbc;
+    --color-darkgrey: #53424c;
+    --color-lightgrey-half: #babbbc50;
+    --color-grey: var(--color-1c);
+    --color-grey-half: #53424c50;
+    --color-warning: #ee0099;
+}
+
+
+body {
+    --swiper-theme-color: "#ff0000"!important;
+    color: white;
+ 
+}
+
+p {    line-height: var(--line-height); }
+
+
+.svg-gradient {
+    stroke-dasharray: 300;
+    /* stroke-dashoffset: 300;  */
+    transition: all .8s ease-in-out;
+  }
+
+  #svg-gradient {
+    --color-stop-1: #9f6cff !important;
+    --color-stop-2: #ff0aaa !important;
+    --color-stop-3: #ff6ccc !important;
+  }
+
+  .popup-1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+   }
+
+   .popup-icon {
+margin-bottom:10px;
+   }
+
+   .popup-1 svg {
+  height:150px;
+  margin-bottom:0;
+  padding:0;
+   }
+
+   .popup-header { 
+    padding:0 20px;
+    margin:0;
+   }
+
+   .popup-1 .popup-title {
+    display:block;
+    color: white;
+    font-size: var(--h5);
+    margin-bottom:10px;
+   }
+
+
+   .popup-1 .popup-description {
+    display:block;
+    color: #999;
+   }
+
+   h1 { 
+    font-size: var(--h1);
+    font-weight: 600;
+   }
+
+   h1, h2, h3, h4, h5 { 
+    font-size: var(--h5);
+    font-weight: 600;
+    line-height: var(--line-height-headings);
+   }
+

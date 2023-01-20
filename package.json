@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1",
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "swiper": "^8.4.6"
+  },
+  "resolutions": {
+    "@nuxt/kit": "3.0.0-rc.13"
+}
+}
+
+
+
