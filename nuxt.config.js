@@ -2,18 +2,35 @@
 
 export default defineNuxtConfig(
     
+
+       {
+        css: [
+            'assets/css/all.css'
+        ],
+    },
+
     {
         buildModules: [
-          '@nuxtjs/pwa',
+            '@nuxtjs/pwa',
         ]
-      },
+    }, 
+
     {
-    
-    css: [
-    'assets/css/all.css'
-    ],
+        head: {
+          link: [
+            { rel: 'manifest', href: '/manifest.json' }
+          ]
+        }
+      },
 
+    {
+    server: {
+        headers: (req, res, next) => {
+            res.setHeader('Access-Control-Allow-Origin', '*')
+            next()
+        }
+    }
 }
+    
+
 )
-
-
