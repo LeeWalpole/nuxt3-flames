@@ -10,6 +10,10 @@ export default defineNuxtConfig(
     },
 
     {
+        middleware: ['cors']
+    },
+
+    {
         buildModules: [
             '@nuxtjs/pwa',
         ]
