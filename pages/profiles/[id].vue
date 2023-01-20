@@ -282,11 +282,35 @@
     import Tabs from '/components/Tabs.vue'
     import Tab from '/components/Tab.vue'
 
+    import jsonData from '~/static/json/profile-1.json'
+    
 
     const {
       id
     } = useRoute().params
 
+
+const profile = ref([])
+    const error = ref(null)
+  
+    const load = async () => {
+        try {
+            // let data = await fetch('https://www.flames.agency/api/' +id+'.json')
+            // https://www.flames.agency/api/profile-1.json
+            let data = await fetch('~/static/json/'+id+'.json')
+            if (!data.ok) {
+                throw Error('Throw error. No data available.')
+            }
+            profile.value = await data.json()
+        } catch (err) {
+            error.value = err.message
+        }
+    }
+    load()
+
+
+
+/*
     const profile = ref([])
     const error = ref(null)
   
@@ -304,6 +328,7 @@
         }
     }
     load()
+    */
 
     
 

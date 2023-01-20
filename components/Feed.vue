@@ -49,7 +49,8 @@
     import "swiper/css/pagination";
     import "swiper/css/navigation";
     import "swiper/css/keyboard";
-  
+    import jsonData from '~/static/json/profiles.json'
+
     // import required modules
     // Import Swiper Vue.js components
     import {
@@ -60,6 +61,9 @@
     } from "swiper";
   
   
+    const profiles = ref(jsonData)
+
+    /*
     const profiles = ref([])
     const error = ref(null)
   
@@ -68,6 +72,9 @@
             // https://www.flames.agency/api/profiles.json
             let data = await fetch("https://www.flames.agency/api/profiles.json")
             // let data = await fetch("http://localhost:10009/wp-json/data/v1/profiles/")
+
+
+            
             if (!data.ok) {
                 throw Error('Throw error. No data available.')
             }
@@ -77,6 +84,9 @@
         }
     }
     load()
+
+    */
+
   </script>
   
 
