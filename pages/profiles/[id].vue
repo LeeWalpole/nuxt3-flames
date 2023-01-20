@@ -300,7 +300,8 @@
         try {
             // let data = await fetch('https://www.flames.agency/api/' +id+'.json')
             // https://www.flames.agency/api/profile-1.json
-            let data = await fetch('https://heroic-conkies-a5985e.netlify.app/public/json/'+id+'.json')
+            // let data = await fetch('/json/profile-1.json')
+            let data = await fetch('/json/'+id+'.json')
             if (!data.ok) {
                 throw Error('Throw error. No data available.')
             }
