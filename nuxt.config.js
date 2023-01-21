@@ -8,10 +8,4 @@ export default defineNuxtConfig(
         ],
     },
 
-    {
-        buildModules: [
-          '@nuxtjs/pwa',
-        ]
-      },
-
 )

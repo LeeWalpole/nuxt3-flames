@@ -9,12 +9,10 @@
   },
   "devDependencies": {
     "@nuxt/image": "^0.7.1",
-    "@nuxtjs/pwa": "^3.3.5",
     "nuxt": "^3.0.0"
   },
   "dependencies": {
-    "swiper": "^8.4.6",
-    "@nuxtjs/pwa": "^3.3.5"
+    "swiper": "^8.4.6"
   },
   "resolutions": {
     "@nuxt/kit": "3.0.0-rc.13"
