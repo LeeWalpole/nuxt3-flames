@@ -10,6 +10,30 @@ export default defineNuxtConfig(
     },
 
     {
+        buildModules: [
+          '@nuxtjs/pwa',
+        ]
+      },
+
+      {
+
+        pwa: {
+            manifest: {
+              name: 'My Awesome App',
+              lang: 'en',
+              useWebmanifestExtension: false
+            },
+          }
+
+      },
+
+      {
+        modules: [
+          '@kevinmarrec/nuxt-pwa'
+        ]
+      },
+
+    {
         middleware: ['cors']
     },
 
