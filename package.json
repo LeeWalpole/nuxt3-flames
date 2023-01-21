@@ -13,7 +13,6 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
-    "sharp": "^0.31.3",
     "swiper": "^8.4.6"
   },
   "resolutions": {
