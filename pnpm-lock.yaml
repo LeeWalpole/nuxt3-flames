@@ -4,7 +4,6 @@ overrides:
   '@nuxt/kit': 3.0.0-rc.13
 
 specifiers:
-  '@kevinmarrec/nuxt-pwa': ^0.15.0
   '@nuxt/image': ^0.7.1
   '@nuxtjs/pwa': ^3.3.5
   nuxt: ^3.0.0
@@ -16,7 +15,6 @@ dependencies:
   swiper: 8.4.6
 
 devDependencies:
-  '@kevinmarrec/nuxt-pwa': 0.15.0
   '@nuxt/image': 0.7.1
   '@nuxtjs/pwa': 3.3.5
   nuxt: 3.0.0
@@ -401,14 +399,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: true
-
-  /@kevinmarrec/nuxt-pwa/0.15.0:
-    resolution: {integrity: sha512-7aEX3k123gq15859pHLnZZgSGSsTnH1BduK4sICktnkOJK6u62Uo0TT85ma9m5OOC27RJuCo/G8nBWEa39dD+g==}
-    dependencies:
-      hasha: 5.2.2
-      sharp: 0.31.3
-      std-env: 3.3.1
     dev: true
 
   /@mapbox/node-pre-gyp/1.0.10:
@@ -4309,6 +4299,7 @@ packages:
       simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
+    dev: false
 
   /shebang-command/2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
