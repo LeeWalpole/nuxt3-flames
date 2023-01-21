@@ -1,16 +1,14 @@
 {
-    "name": "My Nuxt App",
-    "short_name": "Nuxt App",
-    "icons": [
-      {
-        "src": "/icon.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#fff",
-    "theme_color": "#fff"
+  "name": "App Full Name",
+  "short_name": "AppName",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
   }
-  
