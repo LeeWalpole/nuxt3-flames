@@ -1,4 +1,9 @@
-export default {
+export default defineNuxtConfig({
+    css: [
+        'assets/css/all.css'
+      ],
+  })
+  /*export default {
     css: [
       'assets/css/all.css'
     ],
@@ -15,3 +20,4 @@ export default {
     //   fallback: 'index.html'
     // }
 }
+*/
