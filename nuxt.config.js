@@ -15,9 +15,25 @@ export default defineNuxtConfig(
 
     {
         buildModules: [
-            '@nuxtjs/pwa',
+          '@nuxtjs/pwa',
         ]
-    }, 
+      },
+
+      {
+        modules: [
+          '@nuxtjs/pwa',
+        ]
+      },
+
+    {
+      pwa: {
+        manifest: {
+          name: 'ThaiFlames App',
+          lang: 'en',
+          useWebmanifestExtension: false
+        }
+      }
+    },
 
     {
         head: {
