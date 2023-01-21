@@ -13,7 +13,8 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
-    "swiper": "^8.4.6"
+    "swiper": "^8.4.6",
+    "@nuxtjs/pwa": "^3.3.5"
   },
   "resolutions": {
     "@nuxt/kit": "3.0.0-rc.13"
