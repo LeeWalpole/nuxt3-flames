@@ -1,17 +1,17 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
-export default defineNuxtConfig(
-    
-       {
-        css: [
-            'assets/css/all.css'
-        ],
-    },
-
-    {
-        buildModules: [
-          '@nuxtjs/pwa',
-        ]
-      },
-
-)
+export default {
+    css: [
+      'assets/css/all.css'
+    ],
+    // buildModules: [
+    //   '@nuxtjs/pwa',
+    // ],
+    // build: {
+    //   publicPath: '/',
+    //   distDir: './'
+    // },
+    // generate: {
+    //   dir: 'public',
+    //   routes: ['/'],
+    //   fallback: 'index.html'
+    // }
+}
