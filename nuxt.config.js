@@ -1,23 +1,11 @@
 export default defineNuxtConfig({
     css: [
         'assets/css/all.css'
-      ],
-  })
-  /*export default {
-    css: [
-      'assets/css/all.css'
     ],
-    // buildModules: [
-    //   '@nuxtjs/pwa',
-    // ],
-    // build: {
-    //   publicPath: '/',
-    //   distDir: './'
-    // },
-    // generate: {
-    //   dir: 'public',
-    //   routes: ['/'],
-    //   fallback: 'index.html'
-    // }
-}
-*/
+    build: {
+        outputDir: 'build',
+    },
+    generate: {
+        dir: 'generated'
+    },
+})
